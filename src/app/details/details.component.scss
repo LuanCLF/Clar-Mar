@@ -1,19 +1,22 @@
 #details {
    width: 70vw;
-   height: 70vh;
+   height: fit-content;
    margin: 7rem auto;
 
    display: flex;
    justify-content: space-between;
    align-items: center;
    flex-direction: row-reverse;
+   flex-wrap: wrap;
 
    color: var(--color-5);
 }
 
 img {
-   width: 40vw;
-   height: 60vh;
+   max-width: 35vw;
+   min-width: 40rem;
+   max-height: 50vh;
+   min-height: 25vh;
 
    object-fit: cover;
    border-radius: 40%;
@@ -54,7 +57,19 @@ img {
    grid-auto-rows: 3rem;
    gap: 1rem;
 
-   
-
    list-style: none;
+}
+
+@media (max-width: 1150px) {
+   #details {
+      flex-direction: column;
+   }
+   #content-info {
+      
+
+      width: 70vw;
+      
+      display: flex;
+      align-items: center;
+   }
 }

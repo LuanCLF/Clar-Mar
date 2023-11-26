@@ -5,9 +5,11 @@ header {
 
    background-color: var(--color-5);
 
-   height: 16vh;
+   padding: 0 1rem;
+   width: 100%;
+   height: fit-content;
 
-   padding: 0 2rem;
+   padding: 1rem;
 
    position: sticky;
    top: 0;
@@ -18,9 +20,11 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
+   column-gap: 2rem;
 
    width: 70vw;
-   padding: 0 1rem;
+   padding: 1rem 0;
 
    color: var(--color-3);
 }
@@ -29,14 +33,11 @@ header {
    font-size: 4.8rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
    #header {
       width: 100vw;
-      padding: 0 1rem;
    }
 }
-
-
 
 #search {
    display: flex;
@@ -61,27 +62,19 @@ header {
    height: 4rem;
 }
 
-section {
-   width: 70vw;
-   margin: auto;
-
-   padding: 1rem;
-}
-
-.results {
+#notFound {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    flex-direction: column;
 
+   text-align: center;
+
    gap: 2rem;
-}
 
-@media (max-width: 768px) {
-   .results {
-      grid-template-columns: repeat(2, 1fr);
-   }
-}
+   height: 60vh;
 
-@media (max-width: 500px) {
-   .results {
-      grid-template-columns: repeat(1, 1fr);
-   }
+   font-size: 4rem;
+
+   color: var(--color-5);
 }

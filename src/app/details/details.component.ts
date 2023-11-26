@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
    standalone: true,
    imports: [CommonModule],
    template: `<section id="details">
-      <img class="listing-photo" [src]="jewel.photo" [alt]="jewel.name" />
+      <div><img [src]="jewel.photo" [alt]="jewel.name" /></div>
 
       <article id="content-info">
          <h1 class="titles">{{ jewel.name }}</h1>

@@ -25,9 +25,9 @@ import { JewerlyService } from '../jewerly.service';
                [jewel]="jewel"
             ></app-jewelry>
          </section>
-         <section *ngSwitchCase="false">
-            <h2>tem nada não patrão</h2>
-            <i class="fa-solid fa-face-sad-tear"></i>
+         <section id="notFound" *ngSwitchCase="false">
+            <h2>Produto não encontrado</h2>
+            <i class="fa-regular fa-face-sad-tear"></i>
          </section>
       </main>`,
    styleUrl: './home.component.scss',
