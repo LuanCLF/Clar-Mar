@@ -1,0 +1,60 @@
+#details {
+   width: 70vw;
+   height: 70vh;
+   margin: 7rem auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row-reverse;
+
+   color: var(--color-5);
+}
+
+img {
+   width: 40vw;
+   height: 60vh;
+
+   object-fit: cover;
+   border-radius: 40%;
+   border: 0.3rem solid var(--color-4);
+   box-shadow: var(--text-shadow-color-4);
+}
+
+#content-info {
+   width: 25vw;
+   margin-top: 2.5rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   font-size: 3rem;
+}
+
+#content-info h1 {
+   font-size: 3.5rem;
+   margin-bottom: 5rem;
+}
+
+#content-info section {
+   font-size: 3rem;
+   display: inherit;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.response {
+   font-size: 1.7rem;
+   color: var(--color-dark-1);
+}
+
+.colors-info {
+   display: grid;
+   grid-template-columns: repeat(3, 11rem);
+   grid-auto-rows: 3rem;
+   gap: 1rem;
+
+   
+
+   list-style: none;
+}

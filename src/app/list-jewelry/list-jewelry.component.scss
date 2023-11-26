@@ -1,0 +1,20 @@
+#search {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+
+   height: 10rem;
+}
+
+i {
+   font-size: 3rem;
+   cursor: pointer;
+   color: var(--color-4);
+}
+
+#search-form {
+   font-size: 3rem;
+
+   gap: 1.5rem;
+   display: flex;
+}

@@ -1,0 +1,35 @@
+
+footer {
+   position: fixed;
+   bottom: 0;
+
+   width: 100vw;
+   height: fit-content;
+   padding: 1rem;
+
+   background-color: var(--color-2);
+
+   color: var(--color-dark-1);
+}
+
+#info {
+   width: 70vw;
+   margin: auto;
+
+}
+
+p {
+   font-size: 2rem;
+}
+
+
+#info a {
+   color: var(--color-dark-1);
+
+   font-size: 1.8rem;
+
+   font-weight: 900;
+   text-decoration-style: wavy;
+   text-underline-offset: 0.4rem;
+   text-decoration-color: var(--color-5);
+}
